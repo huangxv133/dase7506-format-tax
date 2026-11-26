@@ -38,7 +38,7 @@ out/tables.md        Table I / II / III and the tax decomposition
 paper/paper.md       report source (Markdown)
 paper/appendix.md    appendix source (verbatim prompts, extractor rules)
 paper/build_pdf.py   Markdown → IEEE-style PDF (Chrome headless print)
-paper/paper.pdf      the submitted report
+paper/paper.pdf      the submitted report (DASE7506_3036705931_Huang_Xu.pdf)
 ```
 
 ---
@@ -126,7 +126,7 @@ Expected output: `out/main/metrics.csv`, `out/main/tables.md`, and the three fig
 ```bash
 pip install pypdfium2    # only needed for the page-count report
 python paper/build_pdf.py \
-  --author "Zhan San · 3030100000" \
+  --author "Huang Xu · 3036705931" \
   --repo   "https://github.com/<user>/<repo>" \
   --out    paper/paper.pdf
 ```
