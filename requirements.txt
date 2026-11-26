@@ -1,0 +1,8 @@
+torch==2.8.0
+transformers>=4.44
+datasets>=3.0
+accelerate>=1.0
+scipy>=1.11
+numpy>=1.26
+matplotlib>=3.8
+modelscope>=1.19

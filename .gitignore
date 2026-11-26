@@ -1,0 +1,9 @@
+__pycache__/
+paper/pg*.png
+paper/paper_print.html
+paper/paper_draft.pdf
+models/
+runs/
+data/raw/
+.venv/
+*.pyc
