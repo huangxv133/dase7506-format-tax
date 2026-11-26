@@ -4,6 +4,16 @@
 
 This repository contains everything needed to reproduce every number, table and figure in the report *The Price of Parsability: How Output-Format Constraints Change Accuracy and Cost in Mathematical Reasoning*.
 
+> **Repository:** https://github.com/huangxv133/dase7506-format-tax
+> **Submitted PDF:** `DASE7506_3036705931_Huang_Xu.pdf` (also at `paper/paper.pdf`)
+>
+> ```bash
+> git clone https://github.com/huangxv133/dase7506-format-tax.git
+> cd dase7506-format-tax
+> ```
+>
+> To check the reported numbers without a GPU: unpack `data/all_runs.tgz`, run the two commands in §5.2, and diff against `out/`. Grading is deterministic, so the tables must match exactly.
+
 The study measures how output-format constraints (an unconstrained ending, a `Final answer:` line, a `\boxed{}` box) interact with verbosity instructions (full vs. brief reasoning) in zero-shot mathematical reasoning. Each response is graded twice — by a *strict* extractor that honours only the requested format and a *lenient* extractor that accepts any standard format — which separates a **parsing tax** (accuracy lost because the evaluator could not read a correct answer) from a **capability tax** (a real change in the model's reasoning).
 
 ---
@@ -127,7 +137,7 @@ Expected output: `out/main/metrics.csv`, `out/main/tables.md`, and the three fig
 pip install pypdfium2    # only needed for the page-count report
 python paper/build_pdf.py \
   --author "Huang Xu · 3036705931" \
-  --repo   "https://github.com/<user>/<repo>" \
+  --repo   "https://github.com/huangxv133/dase7506-format-tax" \
   --out    paper/paper.pdf
 ```
 
